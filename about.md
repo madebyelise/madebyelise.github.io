@@ -4,12 +4,17 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hello! I'm a marketing and analytics consultant based in Silicon Valley. Contact me about your needs in the following area. 
 
-### More Information
+### Marketing
+Market Research & Strategy
+Marketing Analytics
 
-A place to include any other types of information that you'd like to include about yourself.
+### Analytics
+Data Mining & Analysis
+Modeling (Optimization, Data Science)
+Data Visualization
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[tnguyen.elise@gmail.com](mailto:tnguyen.elise@gmail.com)
