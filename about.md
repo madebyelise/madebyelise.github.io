@@ -17,4 +17,5 @@ Hello! I'm a marketing and analytics consultant based in Silicon Valley. Contact
 ### Contact me
 
 [tnguyen.elise@gmail.com](mailto:tnguyen.elise@gmail.com)
+
 Portfolio available upon request.
