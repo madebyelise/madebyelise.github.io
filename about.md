@@ -14,8 +14,8 @@ Hello! I'm a marketing and analytics consultant based in Silicon Valley. Contact
 * Modeling (Optimization, Data Science)
 * Data Visualization
 
+Portfolio available upon request.
+
 ### Contact me
 
 [tnguyen.elise@gmail.com](mailto:tnguyen.elise@gmail.com)
-
-Portfolio available upon request.
