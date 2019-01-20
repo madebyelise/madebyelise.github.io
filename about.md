@@ -6,13 +6,13 @@ permalink: /about/
 Hello! I'm a marketing and analytics consultant based in Silicon Valley. Contact me about your needs in the following area. 
 
 ### Marketing
-Market Research & Strategy
-Marketing Analytics
+* Market Research & Strategy
+* Marketing Analytics
 
 ### Analytics
-Data Mining & Analysis
-Modeling (Optimization, Data Science)
-Data Visualization
+* Data Mining & Analysis
+* Modeling (Optimization, Data Science)
+* Data Visualization
 
 ### Contact me
 
