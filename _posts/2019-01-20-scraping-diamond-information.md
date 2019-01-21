@@ -15,11 +15,11 @@ Want to learn how web scraping works? I recommend you first take two actions:
 In this blog post, I'll walk you through how I scraped Brilliant Earth, a diamond selling website using Python and BeautifulSoup. The goal is to scrape the info of as many diamonds as possible and put it into a neat dataframe. From there, we could do fun things like building a regression model to predict diamond pricing. 
 
 ## Scrape diamond info from one single page
-Each diamond on Brilliant Earth has a dedicated page from which you can grab various diamond characteristics such as Price, Carat Weight, Shape and Cut. 
+Each diamond on Brilliant Earth has a dedicated page from which you can grab various diamond characteristics such as Price, Carat Weight, Shape and Cut. For example, check out this beautiful diamond.
 
-What we want to do is send a request to the website, get a result page back, parse it through an HTML parser and then mine through HTML tags/divs to grab what you want. 
+What we want to do is send a request to the website, get a result page back, parse it through an HTML parser which produces a BeautifulSoup object, and then mine through HTML tags/divs to grab what you want. 
 
-The nice thing about BeautifulSoup is it lets you do all of this in a few lines of codes. The function processDiamond below takes in an URL and returns various characteristics of the diamond in a dictionary. 
+The nice thing about BeautifulSoup is it lets you do all of this in a few lines of codes. The function processDiamond below takes in a BeautifulSoup object and returns various characteristics of the diamond in a dictionary. 
 
 ```python
 
@@ -76,6 +76,39 @@ Notice how you only need to change the diamond ID number to get to a different d
 After browsing their search tool, you'd notice you can do a reasonable guess of the diamond IDs simply by trying every number in between 6,000,000 and 7,500,000. Maybe this is not the most effective way out there to get diamond page links, it keeps the code super clean for this exercise.
 
 The code below lets you try every single diamond ID between 6,000,000 and 6,500,000. I also put in some spacing between each request. It's nice and also sometimes necessary to avoid bombarding a website with requests. You don't want to be blocked from accessing a website. When that happens, you need to go to the next step, which is to use proxy IP addresses.
+
+```python
+def addDiamond(diamondId):
+    num_retries = 0
+    got_response = False
+    while True:
+        try:
+            link = requests.get(f"{url}{diamondId}/", timeout=5)
+            got_response = True
+        except Exception as exception:
+            if num_retries < 5:
+                num_retries += 1
+            time.sleep(4**num_retries)
+        if got_response:
+            break
+    soup = BeautifulSoup(link.content,'html.parser')
+    if 'error404' not in str(soup):        
+        diamondDict = processDiamond(soup)
+        data.append(diamondDict)
+    time.sleep(0.3)
+    
+diamondList = range(6621210,6650000)
+for i in tqdm(diamondList):
+    addDiamond(i)
+```
+
+## The Data
+Let's look at the data we obtained from this process. Convert the _data_ variable, which is a list, into a Pandas dataframe. This is what the data looks like. 
+
+
+
+Quite neat, isn't it?
+
 
 ## Conclusion
 Hopefully after reading my blog post, you have a good idea of how web scraping works in a simple example. There's a lot to learn about to web scraping. The thing about web scraping is it's not scalable because every website follows a different structure. However, that also means it's a valuable skill because it's difficult to automate and you'll always be able to find someone needing scraping help!
