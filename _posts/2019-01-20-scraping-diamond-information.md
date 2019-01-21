@@ -105,7 +105,7 @@ for i in tqdm(diamondList):
 ## The Data
 Let's look at the data we obtained from this process. Convert the _data_ variable, which is a list, into a Pandas dataframe. This is what the data looks like. 
 
-![Diamond data]({{site.baseurl}}/madebyelise.github.io/images/diamondData.PNG)
+![Diamond data]({{site.baseurl}}/images/diamondData.PNG)
 
 Quite neat, isn't it?
       
