@@ -112,4 +112,4 @@ Quite neat, isn't it?
 ## Conclusion
 Hopefully after reading my blog post, you have a good idea of how web scraping works in a simple example. There's a lot to learn about to web scraping. The thing about web scraping is it's not scalable because every website follows a different structure. However, that also means it's a valuable skill because it's difficult to automate and you'll always be able to find someone needing scraping help!
 
-See the full source code here. Feel free to contact me with any questions about the post. I'm curious to learn about different organizations' data needs and how my skills can help them obtain better intelligence and advantage in the marketplace.
+View the full source code here. Feel free to contact me with any questions about the post. I'm curious to learn about different organizations' data needs and how my skills can help them obtain better intelligence and advantage in the marketplace.
