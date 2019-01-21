@@ -105,10 +105,10 @@ for i in tqdm(diamondList):
 ## The Data
 Let's look at the data we obtained from this process. Convert the _data_ variable, which is a list, into a Pandas dataframe. This is what the data looks like. 
 
-![Diamond data]({{site.baseurl}}/https://github.com/madebyelise/madebyelise.github.io/blob/master/images/diamondData.PNG)
+![Diamond data]({{site.baseurl}}/madebyelise.github.io/images/diamondData.PNG)
 
 Quite neat, isn't it?
-
+      
 ## Conclusion
 Hopefully after reading my blog post, you have a good idea of how web scraping works in a simple example. There's a lot to learn about to web scraping. The thing about web scraping is it's not scalable because every website follows a different structure. However, that also means it's a valuable skill because it's difficult to automate and you'll always be able to find someone needing scraping help!
 
