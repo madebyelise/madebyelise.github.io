@@ -9,7 +9,7 @@ name: Made by Elise
 description: Marketing & Analytics Consultant
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: {{site.baseurl}}/images/jekyll_logo.png
+avatar: http://i67.tinypic.com/nlv3bs.png
 
 #
 # Flags below are optional
