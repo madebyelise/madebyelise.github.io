@@ -10,7 +10,7 @@ Web scraping is a critical skill for any analyst or growth hacker. It opens up o
 
 Want to learn how web scraping works? I recommend you first take two actions:
 1. Pick a website you are interested in. For starters, look for one that is easy to scrape. What does this mean? If you can extract the data by mining the HTML code of the page, it's easy. If you have to deal with JavaScript, it takes a lot more work.
-2. Go to BeautifulSoup and look at their excellent tutorial for Python.
+2. Go to BeautifulSoup and look at their excellent [documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) for Python.
 
 In this blog post, I'll walk you through how I scraped Brilliant Earth, a diamond selling website using Python and BeautifulSoup. The goal is to scrape the info of as many diamonds as possible and put it into a neat dataframe. From there, we could do fun things like building a regression model to predict diamond pricing. 
 
