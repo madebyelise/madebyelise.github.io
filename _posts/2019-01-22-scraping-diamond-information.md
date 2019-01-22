@@ -1,4 +1,7 @@
 ---
+published:false
+---
+---
 layout: post
 title: Scraping thousands of diamonds' information
 ---
