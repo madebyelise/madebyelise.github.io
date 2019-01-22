@@ -1,5 +1,5 @@
 ---
-published:false
+published: false
 ---
 ---
 layout: post
