@@ -19,7 +19,7 @@ Each diamond on Brilliant Earth has a dedicated page from which you can grab var
 
 What we want to do is send a request to the website, get a result page back, parse it through an HTML parser which produces a BeautifulSoup object, and then mine through HTML tags/divs to grab what you want. 
 
-The nice thing about BeautifulSoup is it lets you do all of this in a few lines of codes. The function processDiamond below takes in a BeautifulSoup object and returns various characteristics of the diamond in a dictionary. 
+The nice thing about BeautifulSoup is it lets you do all of this in a few lines of codes. The function processDiamond below takes in a BeautifulSoup object and returns various characteristics of the diamond in a Python dictionary. 
 
 ```python
 
