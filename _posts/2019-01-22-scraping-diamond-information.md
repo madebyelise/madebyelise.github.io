@@ -73,7 +73,9 @@ Notice how you only need to change the diamond ID number to get to a different d
 
 After browsing their search tool, you'd notice you can do a reasonable guess of the diamond IDs simply by trying every number in between 6,500,000 and 7,500,000. Maybe this is not the most effective way out there to get diamond page links, it keeps the code super clean for this exercise.
 
-The code below lets you try every single diamond ID between 6,400,000 and 6,650,000. I also put in some spacing between each request. It's nice and also sometimes necessary to avoid bombarding a website with requests. You don't want to be blocked from accessing a website. When that happens, you need to go to the next step, which is to use proxy IP addresses.
+The code below lets you download Briliant Earth pages using every single diamond ID between 6,400,000 and 6,650,000. It parses the result into a BeautifulSoup object, which we then process with the processDiamond function if the diamond exists (i.e. the page doesn't return a 404 error). 
+
+Note that I put in some spacing after each request. It's nice and also sometimes necessary to avoid bombarding a website with requests. You don't want to be blocked from accessing a website. When that happens, you need to go to the next step, which is to use proxy IP addresses.
 
 ```python
 def addDiamond(diamondId):
