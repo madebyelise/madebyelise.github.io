@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Scraping thousands of diamonds' information
+published: true
 ---
 
 Web scraping is a critical skill for any analyst or growth hacker. It opens up opportunities to complement your business dataset and lets you capitalize on the most abundant data source out there: the web. 
@@ -12,7 +13,7 @@ Want to learn how web scraping works? I recommend you first take two actions:
 In this blog post, I'll walk you through how I scraped Brilliant Earth, a diamond selling website using Python and BeautifulSoup. The goal is to scrape the info of as many diamonds as possible and put it into a neat dataframe. From there, we could do fun things like building a regression model to predict diamond pricing. 
 
 ## Scrape diamond info from one single page
-Each diamond on Brilliant Earth has a dedicated page from which you can grab various diamond characteristics such as Price, Carat Weight, Shape and Cut. For example, check out this beautiful diamond.
+Each diamond on Brilliant Earth has a dedicated page from which you can grab various diamond characteristics such as Price, Carat Weight, Shape and Cut. For example, check out this [beautiful diamond](https://www.brilliantearth.com/loose-diamonds/view_detail/6805976/).
 
 What we want to do is send a request to the website, get a result page back, parse it through an HTML parser which produces a BeautifulSoup object, and then mine through HTML tags/divs to grab what you want. 
 
