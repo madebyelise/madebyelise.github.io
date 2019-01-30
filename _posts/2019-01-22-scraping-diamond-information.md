@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scraping thousands of diamonds' information
+title: Have you tried web scraping? A tutorial on scraping diamonds' information
 published: true
 ---
 
