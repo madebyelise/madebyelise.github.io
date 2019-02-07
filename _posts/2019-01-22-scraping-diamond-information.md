@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'Getting thousands of diamonds'' information: A web scraping tutorial'
-published: true
+title: 'How to do web scraping: a tutorial'
+published: false
 ---
 
 Web scraping is a critical skill for any analyst or growth hacker. It opens up opportunities to complement your business dataset and lets you capitalize on the most abundant data source out there: the web. 
