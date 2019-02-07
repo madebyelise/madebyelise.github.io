@@ -3,7 +3,7 @@ published: false
 ---
 ---
 layout: post
-title: How to approach a new dataset?
+title: How to approach a new dataset
 ---
 
 Let's face it. We work with new datasets all the time as data professionals. Engineering added new tables to an existing database. The boss suggested augmenting our analysis with a public data source. As data professionals, we are tempted to dive right in. However, before going in too deep, make sure that we understand the data thoroughly.
